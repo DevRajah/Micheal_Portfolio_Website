@@ -14,9 +14,9 @@ app.use(cors('*'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/frontend/index.html');
-  });
+// app.get('/', (req, res) => {
+//     res.sendFile(__dirname + '/frontend/index.html');
+//   });
 
 // Serve static files
 // app.use(express.static(path.join(__dirname, 'frontend')));
