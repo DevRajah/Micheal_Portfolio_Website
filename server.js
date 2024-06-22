@@ -21,6 +21,9 @@ app.use(express.json());
 // Serve static files
 // app.use(express.static(path.join(__dirname, 'frontend')));
 
+app.get('/', (req, res) => {
+    return res.send("Welcome to My Portfolio!");
+})
 
 app.use('/api', router);
 
